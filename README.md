@@ -7,7 +7,7 @@ In order to import the shortcuts, you will first need to allow the import of unt
 
 TeslaFi iOS Shortcut Inventory:
 
-* [Download Latest TeslaFi Shortcuts](https://www.icloud.com/shortcuts/dae0a85bc13a49b4bc3cfae43990b1fa)
+* [Download Latest TeslaFi Shortcuts](https://www.icloud.com/shortcuts/6d25b48732e94e98bc8cab1e32ef687b)
   * Allows you to download each of the published TeslaFi shortcuts, right from the Shortcuts app.
   * NOTE: Anytime a new version of the TeslaFi shortcuts is released you simply need to re-run this shortcut and re-download the appropriate shortcut(s) replacing the existing copies.
 
@@ -35,7 +35,7 @@ TeslaFi iOS Shortcut Inventory:
   * Once the shortcut is named appropriately, simply say "Hey Siri <Name of Shortcut>".
   * NOTE: Please keep in mind that the shortcut name must be unique from other shortcuts in your library.
 * How secure are these shortcuts?
-  * The authentication token that is stored by the "Store TeslaFi Token" shortcut is stored in your personal iCloud Drive. The token is only visible to apps or services that have access to your iCloud drive meaning folks cannot publicly access this data by default. 
+  * The authentication token that is stored by the "Store TeslaFi Token" shortcut is stored in your personal Reminders App. The token is only visible to apps or services that have access to your Reminders App meaning folks cannot publicly access this data by default. 
   * Each of the shortcuts leverage TLS when communicating with TeslaFi as if you were browsing TeslaFi.com yourself via a web browser.
   * I do not log or record any usage data, nor do I log or record any of the stored TeslaFi API tokens.
 
