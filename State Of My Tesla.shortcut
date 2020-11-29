@@ -6,91 +6,17 @@
 	<array>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.filter.reminders</string>
+			<string>is.workflow.actions.documentpicker.open</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>A5CF05AD-655C-488C-B5BF-98519E0C4738</string>
-				<key>WFContentItemFilter</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>WFActionParameterFilterPrefix</key>
-						<integer>1</integer>
-						<key>WFActionParameterFilterTemplates</key>
-						<array>
-							<dict>
-								<key>Operator</key>
-								<integer>4</integer>
-								<key>Property</key>
-								<string>Title</string>
-								<key>Removable</key>
-								<true/>
-								<key>Values</key>
-								<dict>
-									<key>String</key>
-									<string>_DO_NOT_DELETE_TESLAFI_IOS_SHORTCUT_CONFIG_REMINDER</string>
-								</dict>
-							</dict>
-						</array>
-						<key>WFContentPredicateBoundedDate</key>
-						<false/>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFContentPredicateTableTemplate</string>
-				</dict>
-				<key>WFContentItemLimitEnabled</key>
+				<string>76109845-3D84-476D-ABB2-B9E319374A62</string>
+				<key>WFFileErrorIfNotFound</key>
 				<true/>
-				<key>WFContentItemLimitNumber</key>
-				<real>1</real>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.properties.reminders</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>EF19622C-E66B-4FA6-AC29-58D2D9E5A9BB</string>
-				<key>WFContentItemPropertyName</key>
-				<string>Notes</string>
-				<key>WFInput</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Reminders</string>
-						<key>OutputUUID</key>
-						<string>A5CF05AD-655C-488C-B5BF-98519E0C4738</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.detect.dictionary</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>7E46E93C-0B56-4617-9BBD-CBDFB47FC793</string>
-				<key>WFInput</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Notes</string>
-						<key>OutputUUID</key>
-						<string>EF19622C-E66B-4FA6-AC29-58D2D9E5A9BB</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
+				<key>WFGetFilePath</key>
+				<string>ios_shortcuts/teslafi/config.json</string>
+				<key>WFShowFilePicker</key>
+				<false/>
 			</dict>
 		</dict>
 		<dict>
@@ -99,7 +25,7 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
-				<string>86EC359B-365C-4C1E-86EC-359B365CDC1E</string>
+				<string>91A139E9-2F01-4586-B3C5-CD5CE5BD05CF</string>
 				<key>WFDictionaryKey</key>
 				<string>teslafi_token</string>
 				<key>WFInput</key>
@@ -107,9 +33,9 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Dictionary</string>
+						<string>File</string>
 						<key>OutputUUID</key>
-						<string>7E46E93C-0B56-4617-9BBD-CBDFB47FC793</string>
+						<string>76109845-3D84-476D-ABB2-B9E319374A62</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -130,7 +56,7 @@
 						<key>OutputName</key>
 						<string>Dictionary Value</string>
 						<key>OutputUUID</key>
-						<string>86EC359B-365C-4C1E-86EC-359B365CDC1E</string>
+						<string>91A139E9-2F01-4586-B3C5-CD5CE5BD05CF</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -139,6 +65,90 @@
 				</dict>
 				<key>WFVariableName</key>
 				<string>teslafi_token</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getvalueforkey</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>72F6E72F-5E33-4835-BDAD-061372D7E990</string>
+				<key>WFDictionaryKey</key>
+				<string>url</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>File</string>
+						<key>OutputUUID</key>
+						<string>76109845-3D84-476D-ABB2-B9E319374A62</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setvariable</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Dictionary Value</string>
+						<key>OutputUUID</key>
+						<string>72F6E72F-5E33-4835-BDAD-061372D7E990</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFVariableName</key>
+				<string>url</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>4F2B7485-C5C5-4210-B6C6-C9FF39B7CB01</string>
+				<key>WFTextActionText</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>url</string>
+							</dict>
+							<key>{1, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>teslafi_token</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼￼&amp;command=lastGood</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
 			</dict>
 		</dict>
 		<dict>
@@ -154,16 +164,18 @@
 					<dict>
 						<key>attachmentsByRange</key>
 						<dict>
-							<key>{39, 1}</key>
+							<key>{0, 1}</key>
 							<dict>
+								<key>OutputName</key>
+								<string>Text</string>
+								<key>OutputUUID</key>
+								<string>4F2B7485-C5C5-4210-B6C6-C9FF39B7CB01</string>
 								<key>Type</key>
-								<string>Variable</string>
-								<key>VariableName</key>
-								<string>teslafi_token</string>
+								<string>ActionOutput</string>
 							</dict>
 						</dict>
 						<key>string</key>
-						<string>https://www.teslafi.com/feed.php?token=￼&amp;command=lastGood</string>
+						<string>￼</string>
 					</dict>
 					<key>WFSerializationType</key>
 					<string>WFTextTokenString</string>
@@ -1728,7 +1740,7 @@ Rear Passenger-Side Window Status: ￼</string>
 		<key>WFWorkflowIconGlyphNumber</key>
 		<integer>59662</integer>
 		<key>WFWorkflowIconStartColor</key>
-		<integer>4282601983</integer>
+		<integer>-12365313</integer>
 	</dict>
 	<key>WFWorkflowImportQuestions</key>
 	<array/>

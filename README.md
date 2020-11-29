@@ -3,13 +3,18 @@ README
 
 The TeslaFi shortcut(s) were created to integrate Siri with some of TeslaFi's capabilities and recorded vehicle data.
 
-In order to import the shortcuts, you will first need to allow the import of untrusted shortcuts. This can be done by completing the steps documented [here](https://9to5mac.com/2019/08/14/allow-untrusted-shortcuts-ios-13/). You can then click on the link next to "Download Latest TeslaFi Shortcuts" to download & install the shortcut downloader. With the shortcut downloader installed please execute it via the Shortcuts app to download each of the shortcuts. Once each shortcut has been imported into the Shortcuts app on your device, you will then need to execute the "Store TeslaFi Token" shortcut. This results in the storing of the provided authentication token that is used to communicate with TeslaFi. Once that is complete you can then execute any of the other TeslaFi shortcuts.
+In order to import the shortcuts, you will first need to allow the import of untrusted shortcuts. This can be done by completing the steps documented [here](https://9to5mac.com/2019/08/14/allow-untrusted-shortcuts-ios-13/). You can then click on the link next to "TeslaFi iOS Shortcuts Downloader" to download & install the shortcut downloader. With the shortcut downloader installed please execute it via the Shortcuts app to download each of the shortcuts. Once each shortcut has been imported into the Shortcuts app on your device, you will then need to execute the "Store TeslaFi Token" shortcut. This results in the storing of the provided authentication token that is used to communicate with TeslaFi. Once that is complete you can then execute any of the other TeslaFi shortcuts.
 
 TeslaFi iOS Shortcut Inventory:
 
-* [Download Latest TeslaFi Shortcuts](https://www.icloud.com/shortcuts/6d25b48732e94e98bc8cab1e32ef687b)
+* [TeslaFi iOS Shortcuts Downloader](https://www.icloud.com/shortcuts/fb8e0397078a491590acb02eb18d6c5f)
   * Allows you to download each of the published TeslaFi shortcuts, right from the Shortcuts app.
   * NOTE: Anytime a new version of the TeslaFi shortcuts is released you simply need to re-run this shortcut and re-download the appropriate shortcut(s) replacing the existing copies.
+
+* TeslaFi iOS Shortcuts Update Checker
+  * Examines the currently installed version of TeslaFi iOS Shortcuts and lets you know if there is a newer version available
+  * NOTE: When a newer version of TeslaFi iOS Shortcuts is detected, instructions on how to download & install the latest version will be provided by this shortcut
+  * RECOMMENDATION: It is recommended to run this shortcut once a month to ensure that you have the latest version of TeslaFi iOS Shortcuts installed
 
 * Store TeslaFi Token
   * Stores the provided TeslaFi.com username and authentication token
@@ -38,4 +43,3 @@ TeslaFi iOS Shortcut Inventory:
   * The authentication token that is stored by the "Store TeslaFi Token" shortcut is stored in your personal Reminders App. The token is only visible to apps or services that have access to your Reminders App meaning folks cannot publicly access this data by default. 
   * Each of the shortcuts leverage TLS when communicating with TeslaFi as if you were browsing TeslaFi.com yourself via a web browser.
   * I do not log or record any usage data, nor do I log or record any of the stored TeslaFi API tokens.
-
