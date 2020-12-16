@@ -217,29 +217,6 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
-			<string>is.workflow.actions.detect.dictionary</string>
-			<key>WFWorkflowActionParameters</key>
-			<dict>
-				<key>UUID</key>
-				<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
-				<key>WFInput</key>
-				<dict>
-					<key>Value</key>
-					<dict>
-						<key>OutputName</key>
-						<string>Contents of URL</string>
-						<key>OutputUUID</key>
-						<string>BDFBDAD1-F557-4DB0-AD35-48A6C41F2B65</string>
-						<key>Type</key>
-						<string>ActionOutput</string>
-					</dict>
-					<key>WFSerializationType</key>
-					<string>WFTextTokenAttachment</string>
-				</dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.gettext</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -271,6 +248,29 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.detect.dictionary</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>1D68D0BB-3C81-4239-8B4E-4723DB2745A6</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -283,9 +283,9 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>Dictionary</string>
 						<key>OutputUUID</key>
-						<string>1D68D0BB-3C81-4239-8B4E-4723DB2745A6</string>
+						<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -331,9 +331,9 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>Dictionary</string>
 						<key>OutputUUID</key>
-						<string>1D68D0BB-3C81-4239-8B4E-4723DB2745A6</string>
+						<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -367,6 +367,186 @@
 		</dict>
 		<dict>
 			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>2A92DF87-0B5B-48D1-93FC-EC36AE3BCAD7</string>
+				<key>WFCondition</key>
+				<integer>4</integer>
+				<key>WFConditionalActionString</key>
+				<string>Charging</string>
+				<key>WFControlFlowMode</key>
+				<integer>0</integer>
+				<key>WFInput</key>
+				<dict>
+					<key>Type</key>
+					<string>Variable</string>
+					<key>Variable</key>
+					<dict>
+						<key>Value</key>
+						<dict>
+							<key>Aggrandizements</key>
+							<array>
+								<dict>
+									<key>PropertyName</key>
+									<string>Name</string>
+									<key>PropertyUserInfo</key>
+									<string>WFItemName</string>
+									<key>Type</key>
+									<string>WFPropertyVariableAggrandizement</string>
+								</dict>
+							</array>
+							<key>Type</key>
+							<string>Variable</string>
+							<key>VariableName</key>
+							<string>vehicle_state</string>
+						</dict>
+						<key>WFSerializationType</key>
+						<string>WFTextTokenAttachment</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getvalueforkey</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>A826CBC1-AB44-4B4C-A7E6-B6739C6929F5</string>
+				<key>WFDictionaryKey</key>
+				<string>time_to_full_charge</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Dictionary</string>
+						<key>OutputUUID</key>
+						<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>6FDDAF17-9480-4E2A-9210-6451F513E076</string>
+				<key>WFTextActionText</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>attachmentsByRange</key>
+						<dict>
+							<key>{0, 1}</key>
+							<dict>
+								<key>OutputName</key>
+								<string>Dictionary Value</string>
+								<key>OutputUUID</key>
+								<string>A826CBC1-AB44-4B4C-A7E6-B6739C6929F5</string>
+								<key>Type</key>
+								<string>ActionOutput</string>
+							</dict>
+						</dict>
+						<key>string</key>
+						<string>￼ hours</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenString</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setvariable</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>6FDDAF17-9480-4E2A-9210-6451F513E076</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFVariableName</key>
+				<string>charge_time_remaining</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>2A92DF87-0B5B-48D1-93FC-EC36AE3BCAD7</string>
+				<key>WFControlFlowMode</key>
+				<integer>1</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.gettext</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
+				<string>F765B8B6-402C-4898-944B-F29F0E4B2997</string>
+				<key>WFTextActionText</key>
+				<string>Not currently charging</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setvariable</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Text</string>
+						<key>OutputUUID</key>
+						<string>F765B8B6-402C-4898-944B-F29F0E4B2997</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFVariableName</key>
+				<string>charge_time_remaining</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.conditional</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>GroupingIdentifier</key>
+				<string>2A92DF87-0B5B-48D1-93FC-EC36AE3BCAD7</string>
+				<key>UUID</key>
+				<string>2A78A5BD-7890-4668-B076-E033CB0410AB</string>
+				<key>WFControlFlowMode</key>
+				<integer>2</integer>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
 			<string>is.workflow.actions.getvalueforkey</string>
 			<key>WFWorkflowActionParameters</key>
 			<dict>
@@ -379,9 +559,9 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>Dictionary</string>
 						<key>OutputUUID</key>
-						<string>1D68D0BB-3C81-4239-8B4E-4723DB2745A6</string>
+						<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -427,9 +607,9 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>Dictionary</string>
 						<key>OutputUUID</key>
-						<string>1D68D0BB-3C81-4239-8B4E-4723DB2745A6</string>
+						<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -467,6 +647,54 @@
 			<key>WFWorkflowActionParameters</key>
 			<dict>
 				<key>UUID</key>
+				<string>726D63D0-9DEB-4239-8817-9D3774D07DB4</string>
+				<key>WFDictionaryKey</key>
+				<string>est_battery_range</string>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Dictionary</string>
+						<key>OutputUUID</key>
+						<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.setvariable</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>WFInput</key>
+				<dict>
+					<key>Value</key>
+					<dict>
+						<key>OutputName</key>
+						<string>Dictionary Value</string>
+						<key>OutputUUID</key>
+						<string>726D63D0-9DEB-4239-8817-9D3774D07DB4</string>
+						<key>Type</key>
+						<string>ActionOutput</string>
+					</dict>
+					<key>WFSerializationType</key>
+					<string>WFTextTokenAttachment</string>
+				</dict>
+				<key>WFVariableName</key>
+				<string>est_battery_range</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>WFWorkflowActionIdentifier</key>
+			<string>is.workflow.actions.getvalueforkey</string>
+			<key>WFWorkflowActionParameters</key>
+			<dict>
+				<key>UUID</key>
 				<string>5CBDE828-A141-44A3-9ADD-ACC4633E9265</string>
 				<key>WFDictionaryKey</key>
 				<string>charge_limit_soc</string>
@@ -475,9 +703,9 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>Dictionary</string>
 						<key>OutputUUID</key>
-						<string>1D68D0BB-3C81-4239-8B4E-4723DB2745A6</string>
+						<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -523,9 +751,9 @@
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>Dictionary</string>
 						<key>OutputUUID</key>
-						<string>1D68D0BB-3C81-4239-8B4E-4723DB2745A6</string>
+						<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -703,9 +931,9 @@ On</string>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>Dictionary</string>
 						<key>OutputUUID</key>
-						<string>1D68D0BB-3C81-4239-8B4E-4723DB2745A6</string>
+						<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -882,9 +1110,9 @@ On</string>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>Dictionary</string>
 						<key>OutputUUID</key>
-						<string>1D68D0BB-3C81-4239-8B4E-4723DB2745A6</string>
+						<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1061,9 +1289,9 @@ On</string>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>Dictionary</string>
 						<key>OutputUUID</key>
-						<string>1D68D0BB-3C81-4239-8B4E-4723DB2745A6</string>
+						<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1240,9 +1468,9 @@ On</string>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>Dictionary</string>
 						<key>OutputUUID</key>
-						<string>1D68D0BB-3C81-4239-8B4E-4723DB2745A6</string>
+						<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1419,9 +1647,9 @@ On</string>
 					<key>Value</key>
 					<dict>
 						<key>OutputName</key>
-						<string>Text</string>
+						<string>Dictionary</string>
 						<key>OutputUUID</key>
-						<string>1D68D0BB-3C81-4239-8B4E-4723DB2745A6</string>
+						<string>D6BB958C-6FF1-4D39-80C9-CAD903DB7772</string>
 						<key>Type</key>
 						<string>ActionOutput</string>
 					</dict>
@@ -1597,33 +1825,26 @@ On</string>
 					<dict>
 						<key>attachmentsByRange</key>
 						<dict>
-							<key>{105, 1}</key>
+							<key>{104, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>battery_soc</string>
+							</dict>
+							<key>{132, 1}</key>
 							<dict>
 								<key>Type</key>
 								<string>Variable</string>
 								<key>VariableName</key>
 								<string>battery_charge_limit</string>
 							</dict>
-							<key>{131, 1}</key>
+							<key>{158, 1}</key>
 							<dict>
 								<key>Type</key>
 								<string>Variable</string>
 								<key>VariableName</key>
 								<string>battery_range</string>
-							</dict>
-							<key>{154, 1}</key>
-							<dict>
-								<key>Type</key>
-								<string>Variable</string>
-								<key>VariableName</key>
-								<string>hvac_status</string>
-							</dict>
-							<key>{176, 1}</key>
-							<dict>
-								<key>Type</key>
-								<string>Variable</string>
-								<key>VariableName</key>
-								<string>lock_status</string>
 							</dict>
 							<key>{19, 1}</key>
 							<dict>
@@ -1632,28 +1853,49 @@ On</string>
 								<key>VariableName</key>
 								<string>display_name</string>
 							</dict>
-							<key>{213, 1}</key>
+							<key>{193, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>est_battery_range</string>
+							</dict>
+							<key>{216, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>hvac_status</string>
+							</dict>
+							<key>{238, 1}</key>
+							<dict>
+								<key>Type</key>
+								<string>Variable</string>
+								<key>VariableName</key>
+								<string>lock_status</string>
+							</dict>
+							<key>{275, 1}</key>
 							<dict>
 								<key>Type</key>
 								<string>Variable</string>
 								<key>VariableName</key>
 								<string>fd_window_status</string>
 							</dict>
-							<key>{253, 1}</key>
+							<key>{315, 1}</key>
 							<dict>
 								<key>Type</key>
 								<string>Variable</string>
 								<key>VariableName</key>
 								<string>fp_window_status</string>
 							</dict>
-							<key>{289, 1}</key>
+							<key>{351, 1}</key>
 							<dict>
 								<key>Type</key>
 								<string>Variable</string>
 								<key>VariableName</key>
 								<string>rd_window_status</string>
 							</dict>
-							<key>{328, 1}</key>
+							<key>{390, 1}</key>
 							<dict>
 								<key>Type</key>
 								<string>Variable</string>
@@ -1667,12 +1909,12 @@ On</string>
 								<key>VariableName</key>
 								<string>vehicle_state</string>
 							</dict>
-							<key>{77, 1}</key>
+							<key>{75, 1}</key>
 							<dict>
 								<key>Type</key>
 								<string>Variable</string>
 								<key>VariableName</key>
-								<string>battery_soc</string>
+								<string>charge_time_remaining</string>
 							</dict>
 						</dict>
 						<key>string</key>
@@ -1680,11 +1922,15 @@ On</string>
 
 Vehicle State: ￼,
 
+Charge Time Remaining: ￼,
+
 Battery State of Charge: ￼%, 
 
 Battery Charge Limit: ￼%,
 
 Current Rated Range: ￼ miles,
+
+Current Estimated Range: ￼ miles,
 
 HVAC Status: ￼,
 
@@ -1734,7 +1980,7 @@ Rear Passenger-Side Window Status: ￼</string>
 		</dict>
 	</array>
 	<key>WFWorkflowClientVersion</key>
-	<string>1050.24</string>
+	<string>1092.8.3.1</string>
 	<key>WFWorkflowIcon</key>
 	<dict>
 		<key>WFWorkflowIconGlyphNumber</key>
@@ -1770,6 +2016,7 @@ Rear Passenger-Side Window Status: ￼</string>
 	<string>900</string>
 	<key>WFWorkflowTypes</key>
 	<array>
+		<string>Watch</string>
 		<string>NCWidget</string>
 	</array>
 </dict>

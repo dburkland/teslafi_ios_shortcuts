@@ -7,7 +7,7 @@ In order to import the shortcuts, you will first need to allow the import of unt
 
 TeslaFi iOS Shortcut Inventory:
 
-* [TeslaFi iOS Shortcuts Downloader](https://www.icloud.com/shortcuts/fb8e0397078a491590acb02eb18d6c5f)
+* [TeslaFi iOS Shortcuts Downloader](https://www.icloud.com/shortcuts/6da98fa613db44b0845dd845a2b51070)
   * Allows you to download each of the published TeslaFi shortcuts, right from the Shortcuts app.
   * NOTE: Anytime a new version of the TeslaFi shortcuts is released you simply need to re-run this shortcut and re-download the appropriate shortcut(s) replacing the existing copies.
 
@@ -22,16 +22,18 @@ TeslaFi iOS Shortcut Inventory:
 * State Of My Tesla
   * Pulls the most recently recorded vehicle information from TeslaFi and displays the vehicle's current state which includes:
     * Vehicle State
+    * Charge Time Remaining (Hours)
     * Battery State of Charge (%)
     * Battery Charge Limit (%)
     * Current Rated Range (Miles)
+    * Current Estimated Range (Miles)
     * HVAC Status
     * Door Lock Status
     * Front Driver-Side Window Status
     * Front Passenger-Side Window Status
     * Rear Driver-Side Window Status
-    * Rear Passenger-Side Window Status    
-  
+    * Rear Passenger-Side Window Status
+
 ### FAQs
 
 * How can I call these shortcuts using "Hey Siri"?
